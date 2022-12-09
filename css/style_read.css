@@ -1,0 +1,41 @@
+body{
+    width: 95%;
+    height: 100vh;
+    position: relative;
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    background-position: center;
+}
+
+.fieldset{
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.1);
+    /* color: white; */
+    margin: 0 auto;
+}
+
+.form{
+margin: 0 auto;
+}
+
+h1{
+    color: black;
+}
+
+table,
+td,
+th {
+    border: none;
+    border-bottom: 2px solid black;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+.field{
+    font-size: 12px;
+}
