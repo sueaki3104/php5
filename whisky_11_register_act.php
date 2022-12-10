@@ -1,5 +1,5 @@
 <?php
-include('functions.php');
+include('functions2.php');
 
 if (
   !isset($_POST['username']) || $_POST['username'] == '' ||

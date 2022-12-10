@@ -1,7 +1,7 @@
 <?php
 // 関数指定
 session_start();
-include('functions.php');
+include('functions2.php');
 check_session_id();
 
 // id受け取り 編集だからGETを使う

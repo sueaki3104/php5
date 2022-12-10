@@ -2,7 +2,7 @@ body{
     width: 95%;
     height: 100vh;
     position: relative;
-    background-image: url(./img/top.jpg);
+    background-image: url(../img/input_top.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* background-size: cover; */
@@ -33,9 +33,4 @@ th {
     border-bottom: 2px solid black;
     margin: 10px auto;
     text-align: center;
-}
-
-
-.field{
-    font-size: 12px;
 }

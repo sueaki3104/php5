@@ -2,7 +2,7 @@
 <?php
 // MySQLへ接続しDBからデータを取得
 session_start();
-include('functions.php');
+include('functions2.php');
 check_session_id();
 
 $pdo = connect_to_db();
@@ -62,7 +62,7 @@ foreach ($result as $record) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style_read.css">
+  <link rel="stylesheet" href="./css/style_3_read.css">
 
   <title>購入したウィスキーの一覧</title>
 </head>
@@ -75,6 +75,7 @@ foreach ($result as $record) {
   <fieldset class="fieldset">
     <legend>購入したウィスキーの一覧（購入金額の高い順に並んでいます）</legend>
     <a href="./whisky_1_input.php">入力画面へ移動</a>
+    <a href="./whisky_9_logout.php">ログアウト</a>
     <table>
       <thead>
         <tr>

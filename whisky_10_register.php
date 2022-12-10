@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/input.css">
+  <link rel="stylesheet" href="./css/style_10_register.css">
   <title>新規ユーザ登録画面</title>
 </head>
 
@@ -21,7 +21,7 @@
       <div>
         <button>新規登録</button>
       </div>
-      <a href="whisky_7_login.php">or ログイン</a>
+      <a href="whisky_7_login.php">ログイン画面へ戻る</a>
     </fieldset>
   </form>
 

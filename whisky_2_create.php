@@ -3,7 +3,7 @@
 // var_dump($_POST);
 // exit();
 session_start();
-include('functions.php');
+include('functions2.php');
 check_session_id();
 
 // 入力チェック DBにデータを格納するときにはデータの欠損は許されない
@@ -22,6 +22,9 @@ if (
 ) {
   exit('必要事項の入力がされていません');
 }
+// var_dump($_POST);
+// exit();
+// ここまでデータきている
 
 // データの受け取り
 // todo_input.phpからPOSTで送られているのでPOSTで受け取る
@@ -34,9 +37,10 @@ $how_many =  $_POST["how_many"];
 $price =  $_POST["price"];
 $memory =  $_POST["memory"];
 
-// DB接続 MySQLからデータを引っ張ってくる関数をincludeする（本来ここに関数書くけど他にも同じもの書くから
-// functions.phpにまとめて置いてそこから引っ張ってくるようにした）
-include('functions.php');
+// var_dump($_POST);
+// exit();
+// ここまでデータきている
+
 // DBに接続するコードは決まっている（pdo）
 $pdo = connect_to_db();
 
@@ -44,6 +48,10 @@ $pdo = connect_to_db();
 // SQL作成実行
 $sql = 'INSERT INTO whisky_table (id, date_of_purchase, distillery_name, whisky_name, whisky_age, place, how_many, price, memory, created_at, updated_at) 
 VALUES (NULL, :date_of_purchase, :distillery_name, :whisky_name, :whisky_age, :place, :how_many, :price, :memory, now(), now())';
+
+// var_dump($sql);
+// exit();
+
 
 $stmt = $pdo->prepare($sql);
 // バインド変数を設定 PDO::PARAM_STR は「文字列だよ」って事。PDO::PARAM_INTは「数値だぜ」っていう意味。

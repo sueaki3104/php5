@@ -1,7 +1,8 @@
 <?php
 session_start();
-include('functions.php');
+include('functions2.php');
 check_session_id();
+
 
 ?>
 
@@ -11,7 +12,7 @@ check_session_id();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/input.css">
+  <link rel="stylesheet" href="./css/style_1_input.css">
   <title>ウィスキー購入に関するデータ登録（入力画面）</title>
 </head>
 
@@ -23,7 +24,7 @@ check_session_id();
 <!-- ウキスキーの登録を押すと 各種データを whisky_2_create.php に POST（POSTメソッドは渡す値を人に見えない状態でくっつけます） で送ります -->
   <form class="form" action="./whisky_2_create.php" method="POST">
     <fieldset class="fieldset">
-          <a href="./whisky_3_read.php">ウィスキー購入一覧画面へ移動</a>
+          <a href="./whisky_3_read.php">ウィスキー購入一覧画面へ移動</a> <a href="./whisky_9_logout.php">ログアウト</a>
       <legend>ウィスキー購入に関するデータ登録（入力画面）</legend>
         <div class="input">
           購入日 :<br> <input type="date" name="date_of_purchase" style="width:200px;"> 

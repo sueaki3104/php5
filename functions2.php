@@ -14,7 +14,6 @@ function connect_to_db()
     echo json_encode(["db error" => "{$e->getMessage()}"]);
     exit();
     }
-    
 }
 
 //ログインの有無を判断する関数を作成する．

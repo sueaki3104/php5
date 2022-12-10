@@ -4,7 +4,7 @@
 // exit();
 
 session_start();
-include('functions.php');
+include('functions2.php');
 check_session_id();
 
 if (

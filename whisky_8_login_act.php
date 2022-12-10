@@ -1,7 +1,9 @@
+<link rel="stylesheet" href="./css/style_8_login_act.css">
+
 <?php
 // データ受け取り
 session_start();
-include('functions.php');
+include('functions2.php');
 
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -28,7 +30,11 @@ $val = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (!$val) {
   echo "<p>ログイン情報に誤りがあります</p>";
-  echo "<a href=whisky_7_login.php>ログイン</a>";
+  echo "<a href=whisky_7_login.php>ログイン画面へ戻る</a>";
+
+  echo "<p>登録がまだの方の</p>";
+  echo "<a href=whisky_10_register.php>新規登録はこちら</a>";
+ 
   exit();
 } else {
   $_SESSION = array();
@@ -39,3 +45,6 @@ if (!$val) {
   header("Location:whisky_3_read.php");
   exit();
 }
+
+?>
+
